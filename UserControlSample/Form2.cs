@@ -8,7 +8,7 @@ namespace UserControlSample
         public Form2()
         {
             InitializeComponent();
-           
+            this.loginForm1.Select();//カーソルをユーザコントロールへもっていく
         }
 
         private void Btn_Login_Click(object sender, EventArgs e)
