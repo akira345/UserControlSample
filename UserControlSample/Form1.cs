@@ -18,5 +18,9 @@ namespace UserControlSample
             MessageBox.Show("ユーザID：" + user_id + System.Environment.NewLine + "パスワード：" + password + System.Environment.NewLine);
             
         }
+        private void Login_Txt_UserID_Changed(object sender, EventArgs e)
+        {
+            Console.WriteLine("変更されました。");
+        }
     }
 }

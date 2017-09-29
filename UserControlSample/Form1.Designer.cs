@@ -41,6 +41,7 @@
             this.loginForm1.password = "";
             this.loginForm1.Size = new System.Drawing.Size(298, 121);
             this.loginForm1.TabIndex = 0;
+            this.loginForm1.Login_Txt_UserID_Changed += new System.EventHandler(this.Login_Txt_UserID_Changed);
             // 
             // Btn_Login
             // 

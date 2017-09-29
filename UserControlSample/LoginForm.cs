@@ -34,7 +34,9 @@ namespace UserControlSample
             {
                 Lbl_ID_Caution.Text = "ユーザIDを入れてください。";
             }
-            
+            //Login_Txt_UserID_Changedがnullでなければ、イベントハンドラを外部へ通知する。
+            Login_Txt_UserID_Changed?.Invoke(sender, e);
+
         }
 
         private void Txt_Password_TextChanged(object sender, EventArgs e)
@@ -45,5 +47,8 @@ namespace UserControlSample
                 Lbl_Pw_Caution.Text = "パスワードを入れてください。";
             }
         }
+        //公開イベントハンドラを作成し、イベントを外部へ通知する。
+        public event EventHandler Login_Txt_UserID_Changed;
+       
     }
 }
